@@ -16,21 +16,23 @@
 <script src="${pageContext.request.contextPath }/js/bootstrap.min.js"></script>
 <style type="text/css">
 body {
-	  background: url(${pageContext.request.contextPath }/images/bg-library.png);
+	background: url(${pageContext.request.contextPath}/images/bg-library.png) no-repeat center center;
+	background-attachment: fixed; 
 	background-size:cover;
-	position:center;
-	overflow: hidden;  
+	overflow: hidden;
 }
 #top {
-	 height:70px;
-	  background-color:rgba(86,88,84,0.4); 
+	 background-color:rgba(86,88,84,0.4);
+	  background-attachment: fixed; 
+	background-size:cover; 
+	
 }
 
 </style>
 </head>
 <body>
 	<!-- 顶栏 -->
-	<div id="top" class="row">
+<%-- 	<div id="top" class="row">
 			
 		<div class="col-md-2">	
 			<img style="display: inline-block; vertical-align: middle;" src="${pageContext.request.contextPath}/images/netcenter.png" width="200%"/>
@@ -47,7 +49,22 @@ body {
 		</div> -->
 		
 
+	</div> --%>
+	
+	<!-- 顶栏 -->
+	<div id="top" class="row">
+			
+		<div class="col-md-5 col-md-offset-1" 
+			style="padding-top:16px;font-family:FangSong_GB2312;letter-spacing:2px;font-size:21px;font-weight: 1000;">
+			<a href="${pageContext.request.contextPath}/" style="color: #DF2114;">主页</a>
+		</div>	
+		<div class="col-md-6" style="display:inline-block; float:right;">
+			<img style="display:inline-block; float:right;vertical-align: middle;" src="${pageContext.request.contextPath}/images/netcenter.png" width="60%" />
+		</div>
+		
+
 	</div>
+	
 	<!-- 中间主体 -->
 	<div class="container">
 		

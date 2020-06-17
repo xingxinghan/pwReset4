@@ -17,12 +17,13 @@ body {
 	background: url(images/bg-library.png) no-repeat center center;
 	background-attachment: fixed; 
 	background-size:cover;
-	
+	overflow: hidden;
 }
+
 #top {
 	 
-	  background-color:rgba(86,88,84,0.4);
-	  background-attachment: fixed; 
+	background-color:rgba(86,88,84,0.4);
+	background-attachment: fixed; 
 	background-size:cover; 
 } 
 #title{

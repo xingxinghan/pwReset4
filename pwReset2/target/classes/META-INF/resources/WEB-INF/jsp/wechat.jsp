@@ -17,7 +17,7 @@ body {
 	background: url(images/bg-library.png) no-repeat center center;
 	background-attachment: fixed; 
 	background-size:cover;
-	
+	overflow: hidden;
 }
 #top {
 	 background-color:rgba(86,88,84,0.4);
@@ -92,7 +92,7 @@ body {
 </div>	 --%>
 
 	<!-- 顶栏 -->
-	<div id="top" class="row">
+<%-- 	<div id="top" class="row">
 			
 		<div class="col-md-2">	
 			<img style="display: inline-block; vertical-align: middle;" src="${pageContext.request.contextPath}/images/netcenter.png" width="200%"/>
@@ -109,7 +109,23 @@ body {
 		</div> -->
 		
 
+	</div> --%>
+	
+	<!-- 顶栏 -->
+	<div id="top" class="row">
+			
+		<div class="col-md-5 col-md-offset-1" 
+			style="padding-top:16px;font-family:FangSong_GB2312;letter-spacing:2px;font-size:21px;font-weight: 1000;">
+			<a href="${pageContext.request.contextPath}/" style="color: #DF2114;">主页</a>
+		</div>	
+		<div class="col-md-6" style="display:inline-block; float:right;">
+			<img style="display:inline-block; float:right;vertical-align: middle;" src="${pageContext.request.contextPath}/images/netcenter.png" width="60%" />
+		</div>
+		
+
 	</div>
+	
+	
 
 
     <div class="container mt20">
@@ -130,7 +146,7 @@ body {
           <!--   轮播图片 -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="images/wechat-1.png"/>
+                    <img src="images/wechat-1.png" width="20%"/>
                 </div>
                 <div class="item">
                     <img src="images/wechat-2.png"/>
